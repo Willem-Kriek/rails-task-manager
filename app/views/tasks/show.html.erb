@@ -1,0 +1,7 @@
+<h2><%= @task.title %></h2>
+<p>
+  <%= check_box_tag 'completed', '1', @task.completed?, id: 'task_completed' %>
+  <%= label_tag 'task_completed', 'Completed' %>
+</p>
+<p><%= @task.details %></p>
+
